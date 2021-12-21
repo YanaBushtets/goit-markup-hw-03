@@ -12,6 +12,8 @@ body {
 }
 .header {
   border-bottom: 1px;
+  border-style: center;
+  color: #ececec;
 }
 .header-container {
   display: flex;
@@ -32,9 +34,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  display: flex;
-  margin: 50px;
-  align-items: center;
+  margin-right: 93px;
 }
 .web-color {
   font-family: var(--secondary-font);
@@ -49,9 +49,8 @@ body {
 
   margin-left: auto;
 }
-.site-nav-item {
-  display: flex;
-  margin: 0 25px;
+.site-nav-item:not(:last-child) {
+  margin-right: 25px;
 }
 .nav-link {
   font-family: var(--primary-font);
@@ -70,9 +69,8 @@ body {
   margin-left: auto;
 }
 
-.contacts-item {
-  display: flex;
-  margin: 0 25px;
+.contacts-item:not(:last-child) {
+  margin-right: 25px;
 }
 .contact-link {
   font-family: var(--primary-font);
@@ -129,14 +127,10 @@ body {
   padding-bottom: 94px;
 }
 .features-main-title {
-  display: none;
+  visibility: hidden;
 }
 .features {
-  list-style-type: none;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 0 auto;
 }
 h1,
 h2,
@@ -182,7 +176,7 @@ li {
   color: var(--contact-link);
 }
 .works-section {
-  padding: 0px;
+  padding-top: 0px;
 }
 
 .works-title {
@@ -199,18 +193,11 @@ li {
 .works {
   display: flex;
 }
-.works-item {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: flex-start;
-  justify-content: space-between;
-  padding-left: 0px;
-  padding-right: 30px;
-}
+
 .works-item:not(:last-child) {
   margin-right: 30px;
 }
-.img {
+img {
   display: block;
   width: 100%;
   height: auto;
@@ -238,9 +225,8 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-primary);
-  line-height: 19px;
-  margin-top: 19px;
-  margin-bottom: 19px;
+
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -257,6 +243,7 @@ li {
   padding: 60px 0;
 }
 .list-footer {
+  margin-top: 20px;
 }
 .address {
   font-family: var(--primary-font);
@@ -282,12 +269,7 @@ li {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.container-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  list-style-type: none;
-}
+
 .web-footer {
   font-family: var(--secondary-font);
   color: #fff;
@@ -297,11 +279,11 @@ li {
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-top: 60px;
-  margin-bottom: 20px;
 
   flex-direction: row;
 }
 .filter {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -314,7 +296,6 @@ li {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 50px;
 }
 .features-item-title {
   padding: 30px;
@@ -325,8 +306,11 @@ li {
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
-
+.gallery-item-box {
+  padding: 20px 24px;
+}
 .filter-button {
+  border: transparent;
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
@@ -334,6 +318,7 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  padding: 8px 22px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -355,6 +340,4 @@ li {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  line-height: 19px;
-  margin-bottom: 19px;
 }
