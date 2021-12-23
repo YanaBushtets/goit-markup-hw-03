@@ -11,9 +11,7 @@ body {
   font-family: var(--primary-font);
 }
 .header {
-  border-bottom: 1px;
-  border-style: center;
-  color: #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -50,7 +48,7 @@ body {
   margin-left: auto;
 }
 .site-nav-item:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 50px;
 }
 .nav-link {
   font-family: var(--primary-font);
@@ -70,7 +68,7 @@ body {
 }
 
 .contacts-item:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 50px;
 }
 .contact-link {
   font-family: var(--primary-font);
@@ -126,8 +124,12 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.features-main-title {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .features {
   display: flex;
@@ -278,8 +280,8 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-top: 60px;
-
+  margin-bottom: 20px;
+  display: block;
   flex-direction: row;
 }
 .filter {
